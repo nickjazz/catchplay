@@ -1,0 +1,212 @@
+@import "@/assets/css/mixin.scss";
+@import "@/assets/css/iconfont.scss";
+@import "@/assets/css/roboto.scss";
+/* reset */
+* {
+  // font: 16px/16px "BrandonText-Regular";
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+ul ol,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.clear {
+  clear: both;
+}
+
+.mask-for-youtube {
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+// .list-tag {
+  div,
+  ul {
+    &[conType=tag] {
+      display: block;
+      width: 80%;
+      margin: auto;
+      padding: 30px 0;
+      text-align: left;
+      .item {
+        display: inline-block;
+        width: 22%;
+        margin: 0 20px 20px;
+        border: 2px solid #fff;
+        font-size: 50px!important;
+        line-height: 60px!important;
+        height: 60px!important;
+        text-align: center;
+        @include lightFocus;
+        // &:focus {
+        //   box-shadow: 0 0 30px rgba(255, 255, 0, 1); // test
+        // }
+      }
+    }
+  }
+// }
+
+.mod-info-intro {
+  display: block;
+  // border: 1px solid #ff0;
+  width: 804px;
+  max-height: 140px;
+  overflow: auto;
+  padding: 8px 14px 8px 8px;
+  // box-sizing: border-box;
+  margin-top: 40px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  .mod-info-intro-in {
+    width: 100%;
+    // height: 100%;
+    height: 140px;
+    overflow: hidden;
+  }
+  > div,
+  p {
+    display: block;
+    font-size: 24px;
+    color: #f1f1f1;
+    line-height: 28px;
+  }
+  // &.on,
+  &:focus {
+    border-color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    .mod-info-intro-in {
+      height: auto;
+    }
+  }
+  // 804
+  // 146
+}
+
+/* z-index
+content 0-400
+header 401-500
+topbar 501-600
+tops(小浮层) 601-700
+dialog(弹出框)701-800
+前端控制900以上
+*/
+
+.test {
+  // border: 2px solid #faa;
+  position: fixed;
+  // left: 100px;
+  // top: 20px;
+  left: 150px;
+  top: 30px;
+  // width: 100px;
+  // height: 30px;
+  width: 150px;
+  height: 60px;
+  // font-size: 20px;
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.testinput {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #f00;
+  &:focus {
+    border-color: #ff0;
+  }
+}
+
+.test,
+.testmask {
+  width: 600px;
+  height: 150px;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  line-height: 1.1;
+  // border: 1px solid #f0f;
+  z-index: 999;
+  text-align: left;
+  .tit {
+    display: inline-block;
+    min-width: 220px;
+    font-size: 30px;
+    color: #aaa;
+    margin-right: 6px;
+  }
+}
+.test {
+  display: none;
+  position: fixed;
+  left: 500px;
+  top: 30px;
+  height: 30%;
+  width: 1200px;
+  font-size: 30px!important;
+  // top: 900px;
+}
+.testmask {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  .tit {
+    width: 20px;
+  }
+}
+.test2,
+.test3 {
+  // display: block;
+  width: 50%;
+  height: 100px;
+  position: fixed;
+  left: 20px;
+  top: 10px;
+  // position: absolute;
+  // left: 5px;
+  // top: 5px;
+  background: #fff;
+  border: 1px solid #f00;
+  color: #000;
+  font-size: 20px;
+  z-index: 9999;
+}
+.test2 {
+  display: none;
+}
+.test3 {
+  display: none;
+  left: 55%;
+}
+.testtip {
+  line-height: 1.2;
+  position: fixed; left: 100px; top: 100px; font-size: 50px;
+}
+/*
+<span style="position: absolute; left: 0; top: -120px; font-size: 20px; line-height: 1.1; background: rgba(0, 0, 0, .5);">
+            move.down: {{dataNew.move.down}}<br>d: {{getNavDownFun(index)}}</span>
+*/

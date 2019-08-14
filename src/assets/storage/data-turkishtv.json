@@ -1,0 +1,223 @@
+[{
+  "type": "Entertainment",
+  "data": [{
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://edge1.dashmedia.tv:8081/onestudio/She_Tv_Network/playlist.m3u8"
+  },
+  {
+    "title": "这是标题2",
+    "images": "测试图片地址",
+    "url": "http://edge1.dashmedia.tv:8081/onestudio/ReallyTv/playlist.m3u8"
+  },
+  {
+    "title": "这是标题3",
+    "images": "测试图片地址",
+    "url": "http://edge1.dashmedia.tv:8081/onestudio/kartoonfuntime/playlist.m3u8"
+  },
+  {
+    "title": "这是标题3",
+    "images": "测试图片地址",
+    "url": "http://edge1.dashmedia.tv:8081/onestudio/aptv/playlist.m3u8"
+  },
+  {
+    "title": "这是标题3",
+    "images": "测试图片地址",
+    "url": "https://nimble.dashmedia.tv/onestudio/myoktv/playlist.m3u8"
+  },
+  {
+    "title": "这是标题3",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21MAVIKARADENIZ21.m3u8"
+  },
+  {
+    "title": "这是标题3",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21MAVIKARADENIZ21.m3u8"
+  },
+  {
+    "title": "这是标题3",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21MAVIKARADENIZ21.m3u8"
+  }
+  ]
+},
+{
+  "type": "News",
+  "data": [{
+    "title": "这是标题21",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/TV4.m3u8"
+  },
+  {
+    "title": "这是标题22",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/TV4.m3u8"
+  }
+  ]
+},
+{
+  "type": "Music",
+  "data": [{
+    "title": "这是标题31",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21AHABER21.m3u8"
+  }]
+},
+{
+  "type": "Sport",
+  "data": [{
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTHABER21.m3u8"
+  }
+  ]
+},
+{
+  "type": "Kids",
+  "data": [{
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTBELGESEL21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTBELGESEL21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTBELGESEL21.m3u8"
+  }
+  ]
+},
+{
+  "type": "Ethnic",
+  "data": [{
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTEU21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTEU21.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/21TGRTEU21.m3u8"
+  }
+  ]
+},
+{
+  "type": "Documentary",
+  "data": [{
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/TV4.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/TV4.m3u8"
+  },
+  {
+    "title": "这是标题1",
+    "images": "测试图片地址",
+    "url": "http://ima21-live.secure.footprint.net/hls3/TV4.m3u8"
+  }
+  ]
+}
+]

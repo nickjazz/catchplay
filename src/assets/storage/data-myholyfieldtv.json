@@ -1,0 +1,57 @@
+[{
+  "url": "static/img/a6/1.png",
+  "title": "MyHolyfield TV",
+  "genre": "Main Stream Urban Programming",
+  "audience": "18-45",
+  "info": "Urban Hollywood Favorite Movies ,Series,Reality,Music, Fashion,Sports,Boxing ,and Brand New Series.",
+  "stream": "https://nimble.dashmedia.tv/onestudio/holyfield/playlist.m3u8"
+},
+{
+  "url": "static/img/a6/2.png",
+  "title": "SHE TV",
+  "genre": "Main Stream Programming",
+  "audience": "18-45",
+  "info": "Major Source of Great Entertainment，Thrillers，Adventure，Romance，Cooking and Signature Success Stories，Empowering Talking Shows and Celebrity News Entertainment.",
+  "stream": "http://edge1.dashmedia.tv:8081/onestudio/She_Tv_Network/playlist.m3u8"
+},
+{
+  "url": "static/img/a6/3.png",
+  "title": "Really TV",
+  "genre": "Main StreamClassic TV Programs",
+  "audience": "18-54",
+  "info": "Major Source of Classic television,Golden OLdies and Hollywood Favorites, both Movies and Series,all Day Long！",
+  "stream": "http://edge1.dashmedia.tv:8081/onestudio/ReallyTv/playlist.m3u8"
+},
+{
+  "url": "static/img/a6/4.png",
+  "title": "Spydar TV",
+  "genre": "Classic and Contemporary Programming",
+  "audience": "18-54",
+  "info": "Multicast Entertainment for the Entire Family to Enjoy；Adventure，Thrillers，Westerns，Action and Romance！Both Hollywood and Unique Indie，Movies and Series.",
+  "stream": "https://nimble.dashmedia.tv/onestudio/spydar/playlist.m3u8"
+},
+{
+  "url": "static/img/a6/5.png",
+  "title": "Kartoon Fun Time",
+  "genre": "Main Stream Programming",
+  "audience": "3-45",
+  "info": "Kartoon Fun Time Network is a collection of classic cartoons by various personalities including a magician, a clown, and several young ladies – all of which are best suited for the younger generation!",
+  "stream": "http://edge1.dashmedia.tv:8081/onestudio/kartoonfuntime/playlist.m3u8"
+},
+{
+  "url": "static/img/a6/6.png",
+  "title": "AutoPlay Tv",
+  "genre": "Classic and Contemporary Programming",
+  "audience": "18-45",
+  "info": "Independent to Platinum Lables and Artists,with Celebrity Packed Fresh Entertainment,for the entire family to enjoy!",
+  "stream": "http://edge1.dashmedia.tv:8081/onestudio/aptv/playlist.m3u8"
+},
+{
+  "url": "static/img/a6/7.png",
+  "title": "OK TV",
+  "genre": "Family-Main Stream Programs",
+  "audience": "18-54",
+  "info": "OKTV is OK for everyone! Top Rated Family Movies,Music,Reality Series,Drama and Network Programming!",
+  "stream": "https://nimble.dashmedia.tv/onestudio/myoktv/playlist.m3u8"
+}
+]

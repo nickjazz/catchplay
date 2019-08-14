@@ -1,0 +1,78 @@
+@import "@/assets/css/mixin.scss";
+/* manage-common */
+.manage-common {
+  // background: #fff;
+  // color: #000;
+  overflow: auto;
+  max-height: 1080px;
+  font-size: 26px;
+  line-height: 2;
+  color: #ccc;
+  a {
+    color: #fff;
+  }
+  .mod-con0 {
+    .mod-con0-tit {
+      display: block;
+      line-height: 30px;
+      font-size: 22px;
+      padding: 10px;
+      text-align: left;
+    }
+    .mod-con0-con {
+      padding: 10px;
+      text-aling: left;
+    }
+  }
+  .mod-topbar {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #999;
+    padding: 0 20px;
+    text-align: left;
+    .tit-main {
+      display: inline-block;
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+  .list-app0 {
+    display: block;
+    li {
+      display: block;
+      min-height: 30px;
+      line-height: 30px;
+      font-size: 26px!important;
+      // border-bottom: 1px solid #aaa;
+      padding: 10px;
+      text-align: left;
+      div {
+        span {
+          font-size: 26px!important;
+          line-height: 1.5;
+        }
+      }
+      .item-tool {
+        padding: 10px 0;
+        font-size: 26px!important;
+        line-height: 1.5;
+        a {
+          margin-right: 6px;
+          font-size: 26px!important;
+        }
+      }
+    }
+  }
+
+  .list-tool0 {
+    text-align: left;
+    li {
+      display: inline-block;
+      @include btn-basic;
+    }
+    li:focus,
+    li.focus {
+      @include btn-basic-focus;
+    }
+  }
+}
