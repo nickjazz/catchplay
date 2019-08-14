@@ -1,0 +1,302 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+// import VueAnalytics from 'vue-analytics'
+import HelloWorld from '@/components/HelloWorld.vue'
+import Test from '@/components/templates/test/test.vue'
+/* template */
+import Template from '@/components/templates/template.vue'
+import TemplateShowA1 from '@/components/templates/show/a1.vue'
+import TemplateShowA2 from '@/components/templates/show/a2.vue'
+import TemplateShowA3 from '@/components/templates/show/a3.vue'
+import TemplateShowA4 from '@/components/templates/show/a4.vue'
+import TemplateShowA5 from '@/components/templates/show/a5.vue'
+import TemplateShowA6 from '@/components/templates/show/a6.vue'
+import TemplateShowA7 from '@/components/templates/show/a7.vue'
+import TemplateShowA8 from '@/components/templates/show/a8.vue'
+import TemplateShowA9 from '@/components/templates/show/a9.vue'
+import TemplateVideoYoutube from '@/components/templates/video/youtube.vue'
+import TemplateVideoLive from '@/components/templates/video/live.vue'
+import TemplateA7VideoLive from '@/components/templates/video/a7-live.vue'
+import alert from '@/components/templates/test/alert.vue'
+/* manage */
+import TemplateManage from '@/components/manage/template.vue'
+import ManageIndex from '@/components/manage/index.vue'
+import ManageEdit from '@/components/manage/edit.vue'
+import ManageList from '@/components/manage/list.vue'
+import ManageListAppOld from '@/components/manage/listappold.vue'
+
+import ssoIndex from '@/components/templates/login/ssoIndex.vue'
+import ssologin from '@/components/templates/login/ssologin.vue'
+import user from '@/components/templates/login/userIndex.vue'
+import ssologout from '@/components/templates/login/ssologout.vue'
+import res from '@/components/templates/login/getInfoFromRes.vue'
+import nav from '@/pages/a9/tooltabs.vue'
+// import Player from '@/components/templates/video/Player.vue';
+
+Vue.use(Router)
+
+const router = new Router(
+  {
+    routes: [
+      // /
+      {
+        path: '/',
+        name: 'HelloWorld',
+        component: HelloWorld
+      },
+      {
+        path: '/a9',
+        name: 'a9',
+        component: a9
+      },
+      // /test
+      {
+        path: '/test',
+        name: 'Test',
+        component: Template,
+        children: [
+          {
+            path: '/',
+            component: Test
+          },
+          {
+            path: 'alert',
+            component: alert
+          }
+        ]
+      },
+      // /show
+      {
+        path: '/show',
+        name: 'Template-Show-A6',
+        component: Template,
+        children: [
+          {
+            path: 'a1',
+            component: TemplateShowA1
+          },
+          {
+            path: 'a1/:app',
+            component: TemplateShowA1
+          },
+          {
+            path: 'a2',
+            component: TemplateShowA2
+          },
+          {
+            path: 'a2/:app',
+            component: TemplateShowA2
+          },
+          {
+            path: 'a3',
+            component: TemplateShowA3
+          },
+          {
+            path: 'a3/:app',
+            component: TemplateShowA3
+          },
+          {
+            path: 'a4',
+            component: TemplateShowA4
+          },
+          {
+            path: 'a4/:app',
+            component: TemplateShowA4
+          },
+          {
+            path: 'a5',
+            component: TemplateShowA5
+          },
+          {
+            path: 'a5/:app',
+            component: TemplateShowA5
+          },
+          {
+            path: 'a6',
+            component: TemplateShowA6
+          },
+          {
+            path: 'a6/:app',
+            component: TemplateShowA6
+          },
+          {
+            path: 'a7',
+            component: TemplateShowA7
+          },
+          {
+            path: 'a7/:app',
+            component: TemplateShowA7
+          },
+          {
+            path: 'a8',
+            component: TemplateShowA8
+          },
+          {
+            path: 'a8/:app',
+            component: TemplateShowA8
+          },
+          {
+            path: 'a9',
+            component: TemplateShowA9
+          },
+          {
+            path: 'a9/:app',
+            component: TemplateShowA9
+          }
+        ]
+      },
+      {
+        path: '/video',
+        name: 'video-play',
+        component: Template,
+        children: [
+          {
+            path: 'youtube',
+            component: TemplateVideoYoutube
+          },
+          {
+            path: 'live',
+            component: TemplateVideoLive
+          },
+          {
+            path: 'a7-live',
+            component: TemplateA7VideoLive
+          }
+        ]
+      },
+      {
+        path: '/loginindex',
+        name: 'loginindex',
+        component: ssoIndex
+      },
+      {
+        path: '/login',
+        name: 'login',
+        component: ssologin
+      },
+      {
+        path: '/user',
+        name: 'user',
+        component: user
+      },
+      {
+        path: '/logout',
+        name: 'ssologout',
+        component: ssologout
+      },
+      {
+        path: '/res',
+        name: 'res',
+        component: res
+      },
+      {
+        path: '/manage',
+        name: 'manage',
+        component: TemplateManage,
+        children: [
+          {
+            path: '/',
+            // name: 'ManageIndex',
+            component: ManageIndex
+          },
+          {
+            path: 'list',
+            component: ManageList
+          },
+          {
+            path: 'edit',
+            component: ManageEdit
+          }
+        ]
+      },
+      // listapp
+      {
+        path: '/listapp',
+        name: 'listapp',
+        component: ManageListAppOld
+      }
+    ]
+  }
+)
+
+router.afterEach((to, from) => {
+  ga('set', 'page', to.path)
+  ga('send', 'pageview')
+})
+
+// Vue.use(VueAnalytics, {
+//   id: 'UA-XXX-X',
+//   router,
+//   autoTracking: {
+//     // 禁用页面加载时的网页浏览量, 页面自动跟踪在页面加载时发送网页浏览事件，但可以禁用它
+//     pageviewOnLoad: false,
+//     // 使用屏幕视图进行自动跟踪, 通过将true传递给autoTracking对象中的screeview属性，也可以使用自动跟踪和屏幕跟踪
+//     screenview: true,
+//     // 禁用页面自动跟踪, 要禁用自动跟踪，我们只需删除VueRouter实例，但如果您只需要在特定环境或情况下进行跟踪，也可以禁用页面自动跟踪，如此:
+//     page: false,
+//     // 忽略页面自动跟踪上的路线, 要禁用特定路由的自动跟踪，您需要将一个字符串数组传递给插件选项。 字符串必须是路由名称或路由路径。
+//     ignoreRoutes: ['home', '/contacts'],
+//     // 自动跟踪自定义数据, 当自动跟踪可以传递具有自定义对象形状的功能以用作跟踪器时。pageViewTemplate将当前路由作为参数传递
+//     pageviewTemplate (route) {
+//       return {
+//         page: route.path,
+//         title: document.title,
+//         location: window.location.href
+//       }
+//     }
+//   },
+//   // 因此，对于所有这些情况，可以让插件检测是否已在您的html中添加了分析脚本(checkDuplicatedScript)
+//   checkDuplicatedScript: true, // a a和b或者的关系
+//   // 或者只是禁用脚本加载器（disableScriptLoader）
+//   // disableScriptLoader: true, // b a和b或者的关系
+//   // 调试, 实现Google Analytics调试库。请记住它仅用于调试。 analytics_debug.js的文件大小比analytics.js大。
+//   debug: {
+//     enabled: false, // default value
+//     trace: false, // default value
+//     sendHitTask: true // default value
+//   }
+// })
+
+// console.log('router.routes a')
+// console.log(router.options.routes)
+// function setRoute (_id) {
+//   console.log('setRoute fun')
+//   let Vue = this
+//   let appinfo = Vue._global.getAppInfo(Vue.$route.params.app)
+//   console.log('appinfo')
+//   console.log(appinfo)
+//   // TemplateShowA1
+//   // switch (appinfo)
+// }
+export default new Router({
+  // mode: 'history',
+  routes: router.options.routes
+})
+
+
+// import Vue from "vue";
+// import Router from "vue-router";
+// import Home from "./views/Home.vue";
+
+// Vue.use(Router);
+
+// export default new Router({
+//   mode: "history",
+//   base: process.env.BASE_URL,
+//   routes: [
+//     {
+//       path: "/",
+//       name: "home",
+//       component: Home
+//     },
+//     {
+//       path: "/about",
+//       name: "about",
+//       // route level code-splitting
+//       // this generates a separate chunk (about.[hash].js) for this route
+//       // which is lazy-loaded when the route is visited.
+//       component: () =>
+//         import(/* webpackChunkName: "about" */ "./views/About.vue")
+//     }
+//   ]
+// });

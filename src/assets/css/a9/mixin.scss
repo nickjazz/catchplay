@@ -1,0 +1,218 @@
+/* color */
+
+/* ** primary */
+$colorPrimary1: #f26f21;
+
+
+$colorWhite: #fff;
+$colorBlack: #000;
+
+/* ** default */
+$colorDefault1: #525252;
+$colorDefault2: #231f20;
+$colorDefault3: #0e0e0e;
+$colorDefault4: #979797;
+$colorDefault5: #999;
+$colorDefault6: #4cf26f21;
+$colorDefault7: #80000000;
+
+/* ** */
+$colorDeco1: -webkit-linear-gradient(left,$colorDefault6, $colorPrimary1, $colorPrimary1, $colorDefault6);
+
+@mixin focusAniBasic {
+  transition: transform 300ms ease;
+  &:focus {
+    transform: scale(1.2);
+    box-shadow: 0 5px 20px $colorBlack;
+  }
+}
+/* color and bg */
+@mixin btnDefault {
+  display: inline-block;
+  border: 1px solid $colorDefault1;
+  background: $colorDefault1;
+  color: $colorWhite;
+  font-size: 38px;
+  text-align: center;
+  box-sizing: border-box;
+  @include focusAniBasic;
+  .txt {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 700;
+  }
+}
+@mixin btnPrimary {
+  @include btnDefault;
+  border-color: $colorPrimary1;
+  background: $colorPrimary1;
+}
+@mixin btnSecondary1 {
+  @include btnDefault;
+  border-color: $colorDefault4;
+  background: none;
+  &:focus {
+    background-color: $colorWhite;
+    border-color: $colorWhite;
+    color: $colorBlack;
+  }
+}
+@mixin btnSecondary2 {
+  @include btnDefault;
+  border-color: $colorPrimary1;
+  background-color: $colorDefault7;
+  &:focus {
+    border-color: $colorWhite;
+    background-color: $colorWhite;
+    color: $colorPrimary1;
+  }
+}
+@mixin btnDisabled {
+  @include btnDefault;
+  border-color: $colorDefault1;
+  background-color: $colorDefault1;
+  color: $colorDefault5;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* width and height and font-size */
+@mixin btnWatch {
+  min-width: 300px;
+  &,
+  .txt {
+    height: 70px;
+    line-height: 70px;
+  }
+}
+@mixin btnSideMenu {
+  width: 150px;
+  &,
+  .txt {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+// @mixin {
+
+// }
+@mixin btnTag {
+  min-width: 90px;
+  padding: 0 24px;
+  &,
+  .txt {
+    height: 60px;
+    font-weight: 200;
+    line-height: 60px;
+    font-size: 32px;
+  }
+}
+
+@mixin tabDefault {
+  display: inline-block;
+  width: 450px;
+  height: 90px;
+  background: $colorDefault2;
+  color: $colorWhite;
+  line-height: 90px;
+  text-align: center;
+  position: relative;
+  .txt {
+    display: inline-block;
+    font-size: 36px;
+    line-height: 90px;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    // background: $colorPrimary1;
+    background: $colorDeco1; // $colorPrimary2;
+  }
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
+  
+  &:focus {
+    color: $colorPrimary1;
+    background: $colorDefault3;
+    &:before,
+    &:after {
+      display: block;
+    }
+  }
+}
+
+@mixin btnswitch0 {
+  @include btnDefault;
+  display: inline-block;
+  min-width: 90px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 12px;
+  color: $colorWhite;
+  box-sizing: border-box;
+  // border: 1px solid $color-bg-default4;
+  // background: $color-bg-default2;
+  font-weight: 200;
+
+  .txt {
+    display: inline-block;
+    position: relative;
+
+    .arrow {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+@mixin btnswitch0on {
+  // color: $color-txt-focus1 !important;
+  // border-color: $color-bg-highlight3 !important;
+  // background-color: $color-bg-highlight4 !important;
+}
+
+@mixin tooltabDefault {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  box-sizing: border-box;
+}
+@mixin tooltabFocus {
+  background-color: #000000;
+  // color: #f26f21;
+  border-top: 5px solid #ddd;
+  border-bottom: 5px solid #ddd; 
+  border-image: linear-gradient(to right, #4cf26f21, #f26f21, #f26f21, #4cf26f21) 30 30;
+  
+}
+
+@mixin subNavtabDefault {
+  height: 75px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 25px;
+  color: #fff;
+  padding-left: 45px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+@mixin subNavtabFocus {
+  background-color: #000000;
+  // color: #f26f21;
+  border-image: linear-gradient(to right, #4cf26f21, #f26f21, #f26f21, #4cf26f21) 30 30;
+  box-sizing: border-box;
+  // line-height: 65px
+}
