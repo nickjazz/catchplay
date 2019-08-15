@@ -1,5 +1,6 @@
 <template>
 	<div class="a9-container">
+		<test-info></test-info>
 		<toolTab :focusIn="tooltabSwitch" @input="navSelect"></toolTab>
 		<div class="homepage">
 			<homepage :refocus="homePageFocus" @input="toLeft"></homepage>
@@ -10,11 +11,13 @@
 import toolTab from './tooltabs.vue'
 import _ from 'lodash'
 import homepage from './homepage';
+import testInfo from '@/components/common/comps/testInfo.vue'
 export default {
-	name: 'template',
+	name: 'Template-A9',
 	components: {
 		toolTab,
-		homepage
+		homepage,
+		testInfo
 	},
 	watch: {
 	},
@@ -31,9 +34,9 @@ export default {
 	data: function () {
 		return {
 			tooltabSwitch: false,
-			homePageFocus: false
+			homePageFocus: false,
 		}
-	}
+	},
 }
 </script>
 <style lang="scss" scoped>
