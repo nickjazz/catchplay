@@ -28,7 +28,8 @@ module.exports = {
     loaderOptions: {
       postcss: {
         plugins: [
-          require("postcss-px2rem") ({remUnit: 19.2, baseDpr: 1})
+          require("postcss-px2rem") ({remUnit: 19.2, baseDpr: 1}),
+          require('autoprefixer')
         ]
       }
     }

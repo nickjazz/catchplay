@@ -9,7 +9,7 @@
 </template>
 <script lang="js">
 import toolTab from './tooltabs.vue'
-import _ from 'lodash'
+// import _ from 'lodash'
 import homepage from './homepage';
 import testInfo from '@/components/common/comps/testInfo.vue'
 export default {

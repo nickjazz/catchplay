@@ -82,7 +82,7 @@ import slideBar from './focus-slide-bar.vue';
 import BScroll from 'better-scroll';
 import GenerTag from './genreTag.vue';
 import * as Program from './programInterface';
-import _ from 'lodash';
+import { cloneDeep } from 'lodash';
 @Component({
   components: {
 		slideBar,
@@ -117,7 +117,7 @@ export default class HomePage extends Vue {
 			this.nowFocusBar.setFocus();
 			this.showFixedTag = false;
 		} else {
-			if (this.scrollList[this.nowFocusBarIndex] === 'genre-0') this.keyVisualProgram = _.cloneDeep(val);
+			if (this.scrollList[this.nowFocusBarIndex] === 'genre-0') this.keyVisualProgram = cloneDeep(val);
 		}
 	}
 	commonEmit (val: any) {
@@ -172,7 +172,7 @@ export default class HomePage extends Vue {
 		if (this.bscroll && el) {
 			switch (this.nowFocusBarIndex) {
 				case 0:
-					this.bscroll.scrollTo(0, 0, 500);
+					this.bscroll.scrollTo(0, 0, 650);
 					break;
 				case 1:
 					switch (keyCode) {
@@ -182,17 +182,17 @@ export default class HomePage extends Vue {
 							// (document.querySelector('#' + this.scrollList[2]) as HTMLElement).classList.remove('ontop-gener');
 							break;
 						case 40:
-							this.bscroll.scrollTo(0, -1000, 500);
+							this.bscroll.scrollTo(0, -1000, 650);
 							break;
 					}
 					break;
 				case this.barLength - 1:
-					this.bscroll.scrollToElement(el, 600, 0, -800);
+					this.bscroll.scrollToElement(el, 650, 0, -800);
 					break;
 				default:
 					switch (keyCode) {
 						case 38:
-							if (this.nowFocusBarIndex > 2) this.bscroll.scrollToElement(el, 600, 0, -600);
+							if (this.nowFocusBarIndex > 2) this.bscroll.scrollToElement(el, 650, 0, -600);
 							break;
 						case 40:
 							if (this.nowFocusBarIndex === 2) {
@@ -200,7 +200,7 @@ export default class HomePage extends Vue {
 								// (document.querySelector('.genre-tags') as HTMLElement).classList.add('tagfixed');
 								// (document.querySelector('#' + this.scrollList[2]) as HTMLElement).classList.add('ontop-gener');
 							}
-							if (this.nowFocusBarIndex > 3) this.bscroll.scrollToElement(el, 600, 0, -600);
+							if (this.nowFocusBarIndex > 3) this.bscroll.scrollToElement(el, 650, 0, -600);
 							break;
 					}
 					break;
@@ -223,9 +223,14 @@ export default class HomePage extends Vue {
 #home-page {
 	width: 100%;
 	height: 100%;
-	overflow-x: unset;
+	overflow-x: hidden;
 	overflow-y: hidden;
 	font-family: 'myFont';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 .home-page {
 	position: relative;

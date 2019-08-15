@@ -60,7 +60,7 @@
 </template>
 <script lang="ts">
 import { Vue, Component, Prop, Watch, Provide, Inject } from 'vue-property-decorator';
-import _ from 'lodash';
+import { uniq, cloneDeep } from 'lodash';
 import BScroll from 'better-scroll';
 import * as Program from './programInterface';
 @Component({
@@ -99,7 +99,7 @@ export default class SlideBar extends Vue {
 		new Program.ProgramExp(),
 		new Program.ProgramExp(),
 		new Program.ProgramExp(),
-		new Program.ProgramExp(),
+		new Program.ProgramExp(),		
 	];
 	quickViewMode: boolean = false;
 	async mounted () {
@@ -110,7 +110,7 @@ export default class SlideBar extends Vue {
 		if (this.localSlideId === 0) this.setFocus();
 	}
 	get nowSelectCasts () {
-		let type = _.uniq(this.nowSelectData.castAndCrewList.map(ele => ele[0].roleName));
+		let type = uniq(this.nowSelectData.castAndCrewList.map(ele => ele[0].roleName));
 		return Array.from(type, (ele: string) => {
 			let temp: string = 
 			this.nowSelectData.castAndCrewList
@@ -167,7 +167,7 @@ export default class SlideBar extends Vue {
 		right = document.body.clientWidth - right;
 		if (right < 0 || left < 180) this.scrollToEle(this.nowFocusEle);
 		this.nowFocusEle.focus();
-		this.commonEmit( _.cloneDeep(this.dataNew[this.nowFocusIndex]));
+		this.commonEmit( cloneDeep(this.dataNew[this.nowFocusIndex]));
 	}
 	focusMounted () {
 		(this.$refs[`slide-bar-${ this.localSlideId }`] as HTMLElement).classList.add('ontop');
@@ -236,12 +236,15 @@ export default class SlideBar extends Vue {
 				display: inline-block;
 				width: 384px;
 				height: 272px;
-				transition: transform ease .2s;
+				transition: transform cubic-bezier(0.5, 0, 0.1, 1) .65s;
 				background-color: #3A3A3A;
 				margin: 0 6px;
 				position: relative;
 				z-index: 998;
 				box-shadow: 0px 0px 16px rgba(0,0,0,1);
+				opacity: 1;
+				transform: translate3d(0, 0, 0);
+				will-change: transform;
 				.slide-bar-title {
 					height: 56px;
 					white-space: nowrap;
@@ -356,7 +359,7 @@ export default class SlideBar extends Vue {
 				}
 				&:focus {
 					transform: scale(1.2);
-					transition: transform ease .2s;
+					transition: transform cubic-bezier(0.5, 0, 0.1, 1) .65s;
 					z-index: 1001!important;
 					.quick-view {
 						z-index: 1002!important;	
@@ -369,14 +372,14 @@ export default class SlideBar extends Vue {
 					}
 					&:focus {
 						transform: scale(1.2) translateX(9%);
-						transition: transform ease .2s;
+						transition: transform cubic-bezier(0.5, 0, 0.1, 1) .65s;
 					}
 				}
 				&:nth-last-of-type() {
 					margin: 0;
 					&:focus {
 						transform: scale(1.2) translateX(-9%);
-						transition: transform ease .2s;
+						transition: transform cubic-bezier(0.5, 0, 0.1, 1) .65s;
 					}
 				}
 			}
